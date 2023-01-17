@@ -506,7 +506,6 @@ text {
   }
 
   .Hero {
-    display: flex;
     flex-direction: column-reverse;
     padding: 20px;
     justify-content: space-around;
@@ -514,8 +513,6 @@ text {
 
   .MagicSearch {
     padding: 4px;
-    border: none;
-    background-color: #e5ff00;
     border-radius: 4px;
     font-size: 12px;
   }
@@ -528,10 +525,10 @@ text {
     font-size: 24px;
     text-align: center;
   }
+
   .Hero-Left-Section {
     margin-top: 20px;
     text-align: center;
-    display: flex;
     align-items: center;
     flex-direction: column;
     gap: 40px;
@@ -543,7 +540,33 @@ text {
   }
 }
 
-@media only screen and (max-width: 500px) and (min-width: 300px) {
+@media only screen and (max-width: 1279px) and (min-width: 1000px) {
+.nav-item{
+  font-size: 12px;
+}
+
+.MagicSearch{
+  padding: 8px 12px;
+}
+
+.Tagline{
+  font-size: 24px;
+}
+
+.Students{
+  height: 50vh;
+}
+
+.Hero-Left-Section{
+  width: 450px;
+}
+
+.Cta{
+  font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 500px) and (min-width: 200px) {
   .Navigation {
     justify-content: space-between;
     padding: 30px;
@@ -589,6 +612,65 @@ text {
 
   .Students {
     margin-top: 0px;
-    height: 40vh;
+    height: 36vh;
+  }
+}
+
+@media only screen and (max-width: 1560px) and (min-width: 1281px) {
+  .Hero-Left-Section,
+  .Navigation {
+    transform: scale(1.1);
+  }
+
+  .Students {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1561px) {
+  .nav-item {
+    font-size: 36px;
+  }
+
+  .Hero {
+    margin-top: 100px;
+  }
+  .Nav-items {
+    gap: 50px;
+  }
+  .MagicSearch {
+    padding: 30px;
+    border-radius: 12px;
+  }
+
+  #Contact-Us {
+    padding: 26px;
+  }
+
+  .Animated-logo {
+    height: 8vh;
+  }
+
+  .Tagline {
+    font-size: 64px;
+    line-height: 100px;
+  }
+
+  .Below_tagline {
+    font-size: 50px;
+  }
+
+  .Community-CTA,
+  #Discord-Button {
+    font-size: 36px;
+    padding: 12px 20px;
+    margin-top: 20px;
+  }
+  .Hero-Left-Section {
+    width: 900px;
+  }
+
+  .Students {
+    height: 60vh;
   }
 }
