@@ -546,10 +546,12 @@ text {
 @media only screen and (max-width: 500px) and (min-width: 300px) {
   .Navigation {
     justify-content: space-between;
+    padding: 30px;
   }
 
   .Animated-logo {
     margin-right: 100px;
+    height: 6vh;
   }
 
   .Hero {
@@ -561,11 +563,11 @@ text {
 
   .Tagline {
     line-height: 40px;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .Below_tagline {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .Hero-Left-Section {
@@ -586,7 +588,7 @@ text {
   }
 
   .Students {
-    margin-top: 40px;
+    margin-top: 0px;
     height: 40vh;
   }
 }
