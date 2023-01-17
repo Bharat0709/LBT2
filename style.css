@@ -30,8 +30,8 @@ a:hover {
 
 .Animated-logo {
   height: 8vh;
-  animation-name: example;
-  animation-duration: 5s;
+  /* animation-name: example;
+  animation-duration: 5s; */
   margin-right: 180px;
 }
 
@@ -39,8 +39,8 @@ a:hover {
   font-size: 1.1rem;
   display: flex;
   gap: 30px;
-  animation-name: example2;
-  animation-duration: 4s;
+  /* animation-name: example2;
+  animation-duration: 4s; */
   align-items: center;
 }
 
@@ -232,10 +232,6 @@ text {
   display: flex;
 }
 
-#Resources-Heading {
-  border-left: 4px solid rgb(55, 71, 79);
-}
-
 .Resource-Type:hover {
   background-color: white;
   box-sizing: border-box;
@@ -281,19 +277,21 @@ text {
   display: none;
 }
 
-#Events-Section {
-  border-left: 4px solid rgb(219, 219, 60);
-}
-
 .Events,
 .Achievements {
   margin: 20px 50px 50px 50px;
+}
+
+.Achievements {
+  display: flex;
+  justify-content: space-around;
 }
 
 .Events-Images {
   height: 380px;
   border-radius: 12px;
 }
+
 .Achievements-List {
   padding: 20px;
   display: flex;
@@ -302,6 +300,13 @@ text {
   gap: 40px;
 }
 
+#me {
+  margin-right: 30px;
+}
+.members {
+  display: flex;
+  align-items: center;
+}
 .Events {
   align-items: center;
   display: flex;
@@ -337,6 +342,10 @@ text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.wholeTeamdiv {
+  display: flex;
 }
 
 .Socials {
@@ -507,7 +516,6 @@ text {
   align-items: center;
 }
 
-
 @media only screen and (max-width: 1000px) {
   .nav-item {
     display: none;
@@ -619,7 +627,6 @@ text {
   }
 }
 
-
 @media only screen and (max-width: 500px) and (min-width: 200px) {
   .Navigation {
     justify-content: space-between;
@@ -673,8 +680,8 @@ text {
   }
 
   .CollegeLogos {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 
   .colleges {
@@ -683,17 +690,23 @@ text {
     justify-content: center;
   }
 
-  .Events {
-    display: flex;
+  .Achievements-List {
+    padding: 10px;
+    gap: 30px;
+  }
+
+  .Events,
+  .Achievements {
     flex-direction: column;
     gap: 40px;
     justify-content: space-around;
+    align-items: center;
   }
 
   .events-right {
-    display: flex;
     align-items: center;
     gap: 30px;
+    margin-top: 20px;
   }
 
   .Events {
@@ -702,13 +715,18 @@ text {
   }
 
   .Events-Images {
-    height: 200px;
+    height: 220px;
     border-radius: 12px;
   }
 
   #Fixed-Event-Image {
-    height: 150px;
-    width: 200px;
+    height: 200px;
+    width: 250px;
+  }
+
+  #Fixed-Achievements-Image {
+    height: 280px;
+    width: 250px;
   }
 
   .Heading {
@@ -717,8 +735,92 @@ text {
     margin: 20px auto 40px 10px;
   }
 
+  .sections {
+    border-left: none;
+  }
+
   .Arrow-Icon {
-    height: 20px;
+    height: 25px;
+  }
+
+  .Resource-Type:hover {
+    transform: scale(1.04);
+  }
+
+  .Resource-List {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .Resources {
+    gap: 30px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+  }
+
+  .Resource-Link-Items {
+    display: flex;
+    gap: 12px;
+  }
+
+  .Resource-Link-Item {
+    font-size: 12px;
+    width: 120px;
+    padding: 4px;
+  }
+
+  .Resource-Link-Item:hover {
+    transform: scale(1.1);
+  }
+
+  .Resource-Images {
+    display: none;
+  }
+
+  #Hackathon,
+  #Hackathons-Link-List {
+    display: none;
+  }
+
+  .wholeTeamdiv {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .Team-List {
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #me {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .members {
+    margin-top: -40px;
+    gap: 20px;
+  }
+
+  #Fixed-Team-Image {
+    width: 250px;
+    height: 200px;
+    margin: 30px 0px;
+  }
+
+  .join-Us {
+    margin-top: 20px;
+  }
+
+  .Founder {
+    scale: 0.9;
+  }
+
+  .Arrow-Events {
+    height: 40px;
   }
 }
 
@@ -757,17 +859,15 @@ text {
     width: 300px;
   }
 
-  .Events{
+  .Events {
     align-items: center;
   }
 }
 
 @media only screen and (max-width: 1960px) and (min-width: 1300px) {
-
-  .Hero{
+  .Hero {
     padding: 20px;
   }
-
 
   .Hero-Left-Section,
   .Navigation {
@@ -778,7 +878,7 @@ text {
     height: 60vh;
   }
 
-  .stats{
+  .stats {
     margin-top: 80px;
   }
 }
