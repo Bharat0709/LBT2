@@ -140,7 +140,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .Community-CTA {
-  padding: 6px 12px 8px 12px;
+  padding: 8px 12px 8px 12px;
   border-radius: 6px;
   background-color: #263238;
   color: white;
@@ -164,7 +164,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 50px;
+  gap: 80px;
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -189,7 +189,8 @@ text {
   height: 100px;
 }
 
-.statistics {
+.statistics,
+.colleges {
   display: flex;
   gap: 60px;
 }
@@ -496,6 +497,76 @@ text {
   align-items: center;
 }
 
+@media only screen and (max-width: 500px) and (min-width: 200px) {
+  .Navigation {
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .Animated-logo {
+    margin-right: 100px;
+    height: 6vh;
+  }
+
+  .Hero {
+    width: fit-content;
+    justify-items: center;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .Tagline {
+    line-height: 40px;
+  }
+
+  .Below_tagline {
+    font-size: 16px;
+  }
+
+  .Hero-Left-Section {
+    margin: 40px auto 0px auto;
+    width: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Cta {
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  #Discord-Button {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .Students {
+    margin-top: 0px;
+    height: 36vh;
+  }
+
+  .stat1{
+    margin-top: 20px;
+  }
+  .statistics {
+    margin: 40px 0px 0px 12px;
+    flex-direction: column;
+  }
+
+  .CollegeLogos {
+    width: 50px;
+    height: 50px;
+  }
+
+  .colleges{
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+  }
+
+
+}
+
 @media only screen and (max-width: 1000px) {
   .nav-item {
     display: none;
@@ -538,85 +609,63 @@ text {
     margin: auto;
     padding: 20px;
   }
-}
 
-@media only screen and (max-width: 1279px) and (min-width: 1000px) {
-.nav-item{
-  font-size: 12px;
-}
-
-.MagicSearch{
-  padding: 8px 12px;
-}
-
-.Tagline{
-  font-size: 24px;
-}
-
-.Students{
-  height: 50vh;
-}
-
-.Hero-Left-Section{
-  width: 450px;
-}
-
-.Cta{
-  font-size: 18px;
-}
-}
-
-@media only screen and (max-width: 500px) and (min-width: 200px) {
-  .Navigation {
-    justify-content: space-between;
-    padding: 30px;
+  .stat1 {
+    height: 40px;
+    text-align: center;
+    padding: 10px 30px 40px 20px;
+    font-size: 16px;
+    margin-left: 0px;
   }
 
-  .Animated-logo {
-    margin-right: 100px;
-    height: 6vh;
+  .statistics{
+    gap: 20px;
+    margin-top: 30px;
   }
 
-  .Hero {
-    width: fit-content;
-    justify-items: center;
+  .CollegeLogos{
+    height: 60px;
+    width: 60px;
+  }
+
+  .colleges{
+    flex-wrap: wrap;
     padding: 20px;
-    margin: auto;
+    justify-content: center;
+  }
+
+  .stats{
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .nav-item {
+    font-size: 12px;
+  }
+
+  .MagicSearch {
+    padding: 8px 12px;
   }
 
   .Tagline {
-    line-height: 40px;
-    font-size: 22px;
-  }
-
-  .Below_tagline {
-    font-size: 16px;
-  }
-
-  .Hero-Left-Section {
-    margin: 40px auto 0px auto;
-    width: 350px;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .Cta {
-    flex-direction: column;
-    font-size: 20px;
-  }
-
-  #Discord-Button {
-    width: fit-content;
-    margin: auto;
+    font-size: 24px;
   }
 
   .Students {
-    margin-top: 0px;
-    height: 36vh;
+    height: 50vh;
+  }
+
+  .Hero-Left-Section {
+    width: 450px;
+  }
+
+  .Cta {
+    font-size: 18px;
   }
 }
 
-@media only screen and (max-width: 1560px) and (min-width: 1281px) {
+@media only screen and (max-width: 1560px) and (min-width: 1300px) {
   .Hero-Left-Section,
   .Navigation {
     transform: scale(1.1);
