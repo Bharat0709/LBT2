@@ -587,6 +587,11 @@ text {
   margin-left: 550px;
 }
 
+.Card-Image {
+  height: 180px;
+}
+
+
 @media only screen and (max-width: 1000px) {
   .nav-item {
     display: none;
