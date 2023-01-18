@@ -586,6 +586,7 @@ text {
 #Card1 {
   margin-left: 550px;
 }
+
 @media only screen and (max-width: 1000px) {
   .nav-item {
     display: none;
@@ -691,11 +692,6 @@ text {
     margin: 20px auto 40px 10px;
   }
 }
-
-.Card-Image {
-  height: 180px;
-}
-
 
 @media only screen and (max-width: 500px) and (min-width: 200px) {
   .Navigation {
@@ -816,7 +812,6 @@ text {
     height: 25px;
   }
 
-
   #Events-Section {
     background-color: #f6fafd;
     padding-bottom: 20px;
@@ -921,7 +916,7 @@ text {
   }
 
   .Card-Image {
-    height: 120px;
+    height: 180px;
   }
 
   .Resources-Cards {
@@ -930,31 +925,30 @@ text {
     margin: 10px;
   }
 
-
   .Resourcesheading {
     font-size: 24px;
   }
-  
+
   .ResourcesVisit {
     font-size: 10px;
   }
   .Resources-New {
-    padding: 10px;
+    padding: 0px;
+    gap: 2px;
   }
   .cardlist {
     gap: 15px;
-    width: 200px;
-    height: 300px;
-
+    width: 220px;
+    height: 350px;
   }
   #Card1 {
-    margin-left: 970px;
+    margin-left: 1280px;
   }
-  .Resourcesheading{
+  .Resourcesheading {
     font-size: 18px;
   }
-  #Resources-section{
-    margin: 40px auto  20px 20px;
+  #Resources-section {
+    margin: 40px auto 20px 20px;
   }
 }
 
