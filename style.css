@@ -30,8 +30,8 @@ a:hover {
 
 .Animated-logo {
   height: 8vh;
-  /* animation-name: example;
-  animation-duration: 5s; */
+  animation-name: example;
+  animation-duration: 5s;
   margin-right: 180px;
 }
 
@@ -39,8 +39,8 @@ a:hover {
   font-size: 1.1rem;
   display: flex;
   gap: 30px;
-  /* animation-name: example2;
-  animation-duration: 4s; */
+  animation-name: example2;
+  animation-duration: 4s;
   align-items: center;
 }
 
@@ -202,27 +202,6 @@ text {
   margin: 20px auto 40px 50px;
 }
 
-.Resources {
-  margin: 50px 50px 100px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-}
-
-.Resource-Type {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background-color: rgb(243, 243, 236);
-  cursor: pointer;
-  border-left: 4px solid rgb(219, 219, 60);
-}
-
-.Resource-Type p {
-  padding: 8px 6px 8px;
-}
-
 .Arrow {
   height: 30px;
   display: none;
@@ -237,35 +216,6 @@ text {
   box-sizing: border-box;
   box-shadow: 1px 1px 5px 2px rgb(244, 240, 240);
   transform: scale(1.1);
-}
-
-.Resource-List {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.Resource-Link-Items {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-
-.Resource-Link-Item {
-  box-shadow: 1px 1px 5px 2px rgb(244, 240, 240);
-  background-color: rgb(255, 255, 255);
-  padding: 8px 6px 8px;
-  border-left: 4px solid rgb(219, 219, 60);
-}
-
-.Resource-Link-Item:hover {
-  box-shadow: 1px 1px 5px 2px rgb(230, 221, 221);
-  font-weight: bold;
-  transform: scale(1.1);
-}
-
-.Resource-Images {
-  display: flex;
 }
 
 .Images img {
@@ -582,6 +532,60 @@ text {
   align-items: center;
 }
 
+.Arrow-Icon {
+  transform: rotate(90deg);
+  height: 40px;
+}
+
+.Resources-Cards {
+  width: 300px;
+  padding: 30px;
+  align-items: center;
+  margin: 10px;
+  background-color: #f6fafd;
+  width: fit-content;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  letter-spacing: 2px;
+}
+.Resourcesheading {
+  font-size: 24px;
+}
+
+.ResourcesVisit {
+  padding: 8px 12px;
+  width: fit-content;
+  border: none;
+  background-color: #263238;
+  color: white;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.Resources-New {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+}
+.cardlist::-webkit-scrollbar {
+  display: none;
+}
+.cardlist {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  width: 1200px;
+  overflow: scroll;
+  height: 380px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+#Card1 {
+  margin-left: 550px;
+}
 @media only screen and (max-width: 1000px) {
   .nav-item {
     display: none;
@@ -686,12 +690,12 @@ text {
     padding: 0px 0px 0px 20px;
     margin: 20px auto 40px 10px;
   }
-
-  .Arrow-Icon {
-    transform: rotate(90deg);
-    height: 40px;
-  }
 }
+
+.Card-Image {
+  height: 180px;
+}
+
 
 @media only screen and (max-width: 500px) and (min-width: 200px) {
   .Navigation {
@@ -812,44 +816,12 @@ text {
     height: 25px;
   }
 
-  .Resource-Type:hover {
-    transform: scale(1.04);
-  }
-
-  .Resource-List {
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
 
   #Events-Section {
     background-color: #f6fafd;
     padding-bottom: 20px;
   }
-
-  .Resources {
-    gap: 30px;
-    margin-bottom: 40px;
-    margin-top: 100px;
-  }
-
-  .Resource-Link-Items {
-    display: flex;
-    gap: 12px;
-  }
-
-  .Resource-Link-Item {
-    font-size: 12px;
-    width: 120px;
-    padding: 4px;
-  }
-
-  .Resource-Link-Item:hover {
-    transform: scale(1.1);
-  }
-
-  .Resource-Images {
+  .example::-webkit-scrollbar {
     display: none;
   }
 
@@ -898,7 +870,7 @@ text {
   }
 
   #Contact-Us-On {
-    height: 340px;
+    height: 220px;
   }
 
   .Contactus {
@@ -935,17 +907,55 @@ text {
     justify-content: space-around;
     gap: 50px;
   }
-.Footer-Logo{
-  padding: 30px 0px 20px 0px ;
-}
+  .Footer-Logo {
+    height: 40px;
+    padding: 30px 0px 20px 0px;
+  }
 
-.footerlinks{
-  gap: 30px;
-}
+  .footerlinks {
+    gap: 30px;
+  }
 
-#To-top{
-  margin-left: -12px;
-}
+  #To-top {
+    margin-left: -12px;
+  }
+
+  .Card-Image {
+    height: 120px;
+  }
+
+  .Resources-Cards {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+  }
+
+
+  .Resourcesheading {
+    font-size: 24px;
+  }
+  
+  .ResourcesVisit {
+    font-size: 10px;
+  }
+  .Resources-New {
+    padding: 10px;
+  }
+  .cardlist {
+    gap: 15px;
+    width: 200px;
+    height: 300px;
+
+  }
+  #Card1 {
+    margin-left: 970px;
+  }
+  .Resourcesheading{
+    font-size: 18px;
+  }
+  #Resources-section{
+    margin: 40px auto  20px 20px;
+  }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
