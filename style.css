@@ -1,4 +1,4 @@
-/* GENERAL TAGS */
+/* GEERAL TAGS */
 
 * {
   margin: 0px;
@@ -476,16 +476,82 @@ text {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: #f6fafd;
+  padding-bottom: 30px;
+}
+
+.footerlinks {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 10px;
+}
+
+.footerupper {
+  display: flex;
+  padding: 0px 50px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 520px;
+}
+
+.copyright {
+  font-size: 12px;
+}
+.Newsletter {
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+}
+
+.Subscribe {
+  font-size: 18px;
+}
+.footer-lower {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.New {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.Subs {
+  padding: 10px;
+  background-color: rgb(191, 255, 72);
+  border: none;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+  align-items: center;
 }
 
 .Footer-Logo {
   padding: 50px;
   height: 70px;
+  width: fit-content;
 }
 
-#Footer-Social-Links {
-  margin: 20px 50px 20px 50px;
+.totop {
+  padding: 6px 12px;
+  text-align: center;
+  color: white;
+  border-radius: 6px;
+  background-color: #263238;
 }
 
 .Arrow-Icon {
@@ -762,7 +828,6 @@ text {
     padding-bottom: 20px;
   }
 
-
   .Resources {
     gap: 30px;
     margin-bottom: 40px;
@@ -833,7 +898,7 @@ text {
   }
 
   #Contact-Us-On {
-    height: 290px;
+    height: 340px;
   }
 
   .Contactus {
@@ -851,12 +916,36 @@ text {
     font-size: 18px;
   }
 
-
-
-
   .Social-media {
     padding: 0px 20px 0px 20px;
   }
+
+  .footer {
+    margin-top: 40px;
+  }
+  .footerupper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .footer-lower {
+    flex-direction: column-reverse;
+    padding: 50px;
+    justify-content: space-around;
+    gap: 50px;
+  }
+.Footer-Logo{
+  padding: 30px 0px 20px 0px ;
+}
+
+.footerlinks{
+  gap: 30px;
+}
+
+#To-top{
+  margin-left: -12px;
+}
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
