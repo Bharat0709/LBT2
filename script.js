@@ -15,15 +15,50 @@ const ArrowCoding = document.querySelector("#Arrow-Id-Coding");
 const HackathonImage = document.querySelector("#Hackathon");
 const CodingImage = document.querySelector("#Coding");
 
-ResourceTypeHackathon.addEventListener("click", function () {
-  ArrowHacathons.style.display = "flex";
-  ArrowCoding.style.display = "none";
-  ResourcesLinkHackathon.style.display = "flex";
-  ResourcesLinkCoding.style.display = "none";
-  HackathonImage.style.display = "flex";
-  CodingImage.style.display = "none";
-});
-
 ScrollEvents.addEventListener("click", function () {
   Scroll.scrollIntoView({ behavior: "smooth" });
 });
+
+const SearchInput = document.querySelector(".search-input");
+const SearchButton = document.querySelector(".search");
+
+function websiteVisits(response) {
+  document.querySelector("#visits").textContent = response.value;
+}
+
+SearchButton.addEventListener("click", function () {
+  const PromptGiven = SearchInput.value;
+  const generateText = async (question) => {
+    const apiKey = "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";
+    const url = `https://api.openai.com/v1/engines/text-davinci-003/completions`;
+    const requestBody = {
+      prompt: question,
+      temperature: 0.9,
+      max_tokens: 500,
+    };
+
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify(requestBody),
+    });
+
+    const json = await response.json();
+    const generatedText = json.choices[0].text;
+
+    var string = `${generatedText}`;
+    var str = string.split("");
+    var el = document.getElementById("str");
+    (function animate() {
+      str.length > 0 ? (el.innerHTML += str.shift()) : clearTimeout(running);
+      var running = setTimeout(animate, 30);
+    })();
+  };
+  generateText(`${PromptGiven}`);
+});
+
+// require(`dotenv`).config();
+// console.log(process.env.apiKey);
