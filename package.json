@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "dotenv": "^16.0.3"
-  }
+  },
+  "name": "responsive-lbt",
+  "description": "git add README.md",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bharatpahwa/Responsive-Lets-Bunk-Today.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bharatpahwa/Responsive-Lets-Bunk-Today/issues"
+  },
+  "homepage": "https://github.com/Bharatpahwa/Responsive-Lets-Bunk-Today#readme"
 }
