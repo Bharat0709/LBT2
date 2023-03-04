@@ -18,6 +18,12 @@ a:hover {
   font-weight: bold;
 }
 
+.Reload{
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
 /*  NAVIGATION BAR CSS  */
 
 .Navigation {
