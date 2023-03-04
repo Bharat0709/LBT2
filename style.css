@@ -344,6 +344,7 @@ text {
   background-color: #263238;
   color: white;
 }
+
 #SyllabusXVisit {
   background-color: #e5ff00;
   color: black;
@@ -699,11 +700,16 @@ text {
 
 .cardlist {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 15px;
   flex-direction: column;
 }
-
+  
+.cardlist {
+  gap: 15px;
+  width: 320px;
+  height: 350px;
+}
 .Promote {
   padding: 8px 12px;
   width: fit-content;
@@ -1096,18 +1102,27 @@ text {
   }
 
 
-  .Resources-New {
-    padding: 0px;
-    gap: 2px;
+  .Resources-Cards {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 60px;
+    padding: 10px;
+    letter-spacing: 2px;
+    box-shadow: -2px 2px 20px 1px rgba(196, 239, 255, 0.664);
   }
+
   .cardlist {
-    gap: 15px;
-    width: 220px;
+    gap: 30px;
+    width:auto;
     height: 350px;
   }
-  #Card1 {
-    margin-left: 1280px;
-  }
+
+
   .Resourcesheading {
     font-size: 18px;
   }
@@ -1115,8 +1130,31 @@ text {
     height: 200px;
   }
 
-  .location , .date{
+  .location{
     margin-left: 10px;
+  }
+
+  .date{
+    margin-left: 22px;
+  }
+
+  .Resources-New {
+    background-color: #f6fafd;
+    padding: 20px 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .Resources-New {
+    padding: 0px;
+    gap: 20px;
+  }
+
+  #Resources-section {
+    margin: 40px auto 40px 30px;
   }
 
 }
