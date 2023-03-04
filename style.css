@@ -629,9 +629,11 @@ text {
   display: flex;
   gap: 60px;
   padding: 10px;
-  letter-spacing: 2px;
   box-shadow: -2px 2px 20px 1px rgba(196, 239, 255, 0.664);
+  letter-spacing: 2px;
 }
+
+
 .Resource-Brief {
   font-size: 12px;
 }
@@ -1101,7 +1103,7 @@ text {
     gap: 60px;
     padding: 10px;
     letter-spacing: 2px;
-    box-shadow: -2px 2px 20px 1px rgba(196, 239, 255, 0.664);
+    /* box-shadow: -2px 2px 20px 1px rgba(196, 239, 255, 0.664); */
   }
 
   .Resourcesheading {
@@ -1112,7 +1114,7 @@ text {
   }
 
   .location{
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .date{
