@@ -175,6 +175,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .Below_tagline {
   font-size: 22px;
 }
+#Resources-section {
+  margin: 40px auto 20px 60px;
+}
 
 .Hero-Left-Section {
   display: flex;
@@ -337,11 +340,11 @@ text {
   justify-content: center;
 }
 
-#Card-syllabus{
+#Card-syllabus {
   background-color: #263238;
   color: white;
 }
-#SyllabusXVisit{
+#SyllabusXVisit {
   background-color: #e5ff00;
   color: black;
   box-shadow: 2px 2px 12px 2px black;
@@ -632,8 +635,6 @@ text {
   font-size: 12px;
 }
 
-
-
 .Event-Card {
   box-shadow: none;
 }
@@ -683,7 +684,7 @@ text {
 
 .Resources-New {
   background-color: #f6fafd;
-  padding: 30px 20px;
+  padding: 20px 20px;
   display: flex;
   align-items: center;
   margin: auto;
@@ -807,8 +808,74 @@ text {
     padding: 0px 0px 0px 20px;
     margin: 20px auto 40px 10px;
   }
-}
 
+  
+  .Achievements-List {
+    padding: 10px;
+    gap: 30px;
+  }
+
+  .Achievements {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Events-Images{
+    height: 300px;
+  }
+  #Fixed-Achievements-Image , #Fixed-Team-Image {
+    height: 380px;
+    width: 350px;
+  }
+  #Fixed-Team-Image{
+    margin-left: -20px;
+  }
+  .wholeTeamdiv {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .Team-List {
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  #me {
+    margin: 0px 0px 40px 0px;
+  }
+
+  #Contact-Us-On {
+    height: 320px;
+  }
+
+  .footerupper{
+    display: none;
+  }
+
+  .footer{
+    margin-top: 40px;
+  }
+
+  .Contactus {
+    margin: auto;
+    padding: 10px;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .Contact-us-right {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 0px;
+    font-size: 18px;
+  }
+
+
+}
 @media only screen and (max-width: 500px) and (min-width: 200px) {
   .Navigation {
     justify-content: space-between;
@@ -1027,6 +1094,8 @@ text {
   .ResourcesVisit {
     font-size: 10px;
   }
+
+
   .Resources-New {
     padding: 0px;
     gap: 2px;
@@ -1042,11 +1111,15 @@ text {
   .Resourcesheading {
     font-size: 18px;
   }
-  #Resources-section {
-    margin: 40px auto 20px 20px;
+  .Events-Images {
+    height: 200px;
   }
-}
 
+  .location , .date{
+    margin-left: 10px;
+  }
+
+}
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
   .nav-item {
     font-size: 12px;
@@ -1077,7 +1150,6 @@ text {
     width: 300px;
   }
 }
-
 @media only screen and (max-width: 1960px) and (min-width: 1300px) {
   .Hero {
     padding: 20px;
@@ -1096,7 +1168,6 @@ text {
     margin-top: 80px;
   }
 }
-
 @media only screen and (max-width: 2560px) and (min-width: 1961px) {
   .nav-item {
     font-size: 36px;
