@@ -653,6 +653,14 @@ text {
   transform: rotate(90deg);
   height: 40px;
 }
+.PG-Image{
+  height: 100px;
+}
+
+#Payingguest{
+background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
+} 
+
 
 .Resources-Cards {
   align-items: center;
@@ -666,7 +674,23 @@ text {
   box-shadow: -2px 2px 20px 1px rgba(196, 239, 255, 0.664);
   letter-spacing: 2px;
 }
+.Assistance{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+#LaptopsAssistance{
+  background-image: linear-gradient(to left , #f4afe9 , #d7ebeb);
+}
+#Buylaptops{
+  background-color: #263238;
+  margin: 12px ;
+}
+
+#BuyPG{
+  margin: 10px;
+}
 .Resource-Brief {
   font-size: 12px;
 }
