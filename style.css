@@ -680,6 +680,16 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
   flex-wrap: wrap;
 }
 
+.LBTsupport{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buysellbuttons{
+  margin-top: 20px;
+}
+
 #LaptopsAssistance{
   background-image: linear-gradient(to left , #f4afe9 , #d7ebeb);
 }
@@ -690,6 +700,7 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
 
 #BuyPG{
   margin: 10px;
+  background-color: #263238;
 }
 .Resource-Brief {
   font-size: 12px;
@@ -796,13 +807,24 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
   margin: 20px;
   flex-direction: column;
   align-items: center;
- text-align: center;
-  background-image: linear-gradient(to right, #fcf4df ,#f2c1ea, #f67b6b);
-  background-repeat: no-repeat;
+  text-align: center;
+  background-image: linear-gradient(to left ,#f2c1ea, #e4e95d);
   border-radius: 20px;
 }
 #Aakash{
-  background-image: linear-gradient(to right,#f4b3ef ,#b2e5f8,#f2f3e2  );
+  background-image: linear-gradient(to left,#b3f4e6 ,#b2e5f8,#f2f3e2  );
+}
+
+#GithubTemplate{
+  background-image: linear-gradient(to right,#f3f98a,#95ecb0  ); 
+}
+
+#Resumetemplate{
+  background-image: linear-gradient(to right , #e763f9a2 , #f2c2ee);
+}
+
+#PortfolioTemplate{
+  background-image:linear-gradient(to right , #f0cdcd ,#71c3f7 );
 }
 
 .buyandsell {
@@ -831,6 +853,21 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
 }
 .href {
   color: white;
+}
+.templates{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#BuyGithub , #BuyPortfolio ,#BuyResume{
+  background-color: #263238;
+  margin: 20px 0px 0px 0px  ;
+}
+
+
+.Temp{
+  width: 300px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -976,6 +1013,7 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
     font-size: 18px;
   }
 }
+
 @media only screen and (max-width: 500px) and (min-width: 200px) {
   .Navigation {
     justify-content: space-between;
@@ -1241,6 +1279,13 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
 
   #Resources-section {
     margin: 40px auto 40px 30px;
+  }
+
+  .Assistance{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
