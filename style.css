@@ -131,7 +131,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 .search-input2 {
   padding: 6px;
   width: auto;
-  /* border: none; */
+
   border-radius: 6px;
 }
 
@@ -351,10 +351,7 @@ text {
   width: 20px;
 }
 
-.date,
-.location {
-  margin-left: -200px;
-}
+
 
 .CampusAmbassadors {
   display: flex;
@@ -365,20 +362,24 @@ text {
 }
 
 .Events {
-  margin: 30px auto 0px auto;
+  margin: 30px 0px 0px 0px;
   background-color: #ffe0c690;
-  padding: 20px;
+  padding: 20px 0px 0px 0px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
 }
-
+#Events-Section {
+  padding: 10px 0px 10px 0px;
+}
 #Card-syllabus {
   background-color: #263238;
   color: white;
 }
-
+span:nth-of-type(1) {
+  width: 8%;
+}
 #SyllabusXVisit {
   background-color: #e5ff00;
   color: black;
@@ -653,14 +654,13 @@ text {
   transform: rotate(90deg);
   height: 40px;
 }
-.PG-Image{
+.PG-Image {
   height: 100px;
 }
 
-#Payingguest{
-background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
-} 
-
+#Payingguest {
+  background-image: linear-gradient(to left, #ffed00, #f49290ea);
+}
 
 .Resources-Cards {
   align-items: center;
@@ -674,31 +674,31 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
   box-shadow: -2px 2px 20px 1px rgba(196, 239, 255, 0.664);
   letter-spacing: 2px;
 }
-.Assistance{
+.Assistance {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.LBTsupport{
+.LBTsupport {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.buysellbuttons{
+.buysellbuttons {
   margin-top: 20px;
 }
 
-#LaptopsAssistance{
-  background-image: linear-gradient(to left , #f4afe9 , #d7ebeb);
+#LaptopsAssistance {
+  background-image: linear-gradient(to left, #f4afe9, #d7ebeb);
 }
-#Buylaptops{
+#Buylaptops {
   background-color: #263238;
-  margin: 12px ;
+  margin: 12px;
 }
 
-#BuyPG{
+#BuyPG {
   margin: 10px;
   background-color: #263238;
 }
@@ -726,8 +726,10 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
 .Members {
   font-size: 14px;
   font-weight: bold;
+  /* padding: 6px; */
   justify-content: space-between;
 }
+
 
 .Resourcesheading {
   font-size: 20px;
@@ -745,7 +747,6 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
   padding: 8px 12px;
   width: fit-content;
   border: none;
-  /* margin-left: 60px; */
   letter-spacing: 0.4px;
   background-color: #263238;
   color: white;
@@ -808,23 +809,23 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to left ,#f2c1ea, #e4e95d);
+  background-image: linear-gradient(to left, #f2c1ea, #e4e95d);
   border-radius: 20px;
 }
-#Aakash{
-  background-image: linear-gradient(to left,#b3f4e6 ,#b2e5f8,#f2f3e2  );
+#Aakash {
+  background-image: linear-gradient(to left, #b3f4e6, #b2e5f8, #f2f3e2);
 }
 
-#GithubTemplate{
-  background-image: linear-gradient(to right,#f3f98a,#95ecb0  ); 
+#GithubTemplate {
+  background-image: linear-gradient(to right, #f3f98a, #95ecb0);
 }
 
-#Resumetemplate{
-  background-image: linear-gradient(to right , #e763f9a2 , #f2c2ee);
+#Resumetemplate {
+  background-image: linear-gradient(to right, #e763f9a2, #f2c2ee);
 }
 
-#PortfolioTemplate{
-  background-image:linear-gradient(to right , #f0cdcd ,#71c3f7 );
+#PortfolioTemplate {
+  background-image: linear-gradient(to right, #f0cdcd, #71c3f7);
 }
 
 .buyandsell {
@@ -854,19 +855,20 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
 .href {
   color: white;
 }
-.templates{
+.templates {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-#BuyGithub , #BuyPortfolio ,#BuyResume{
+#BuyGithub,
+#BuyPortfolio,
+#BuyResume {
   background-color: #263238;
-  margin: 20px 0px 0px 0px  ;
+  margin: 20px 0px 0px 0px;
 }
 
-
-.Temp{
+.Temp {
   width: 300px;
 }
 
@@ -1015,6 +1017,9 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
 }
 
 @media only screen and (max-width: 500px) and (min-width: 200px) {
+  span:nth-of-type(1) {
+    width: 12%;
+  }
   .Navigation {
     justify-content: space-between;
     padding: 30px;
@@ -1219,32 +1224,25 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
     height: 180px;
   }
 
-  .Resources-Cards {
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
-  }
-
   .Resourcesheading {
     font-size: 24px;
   }
 
   .ResourcesVisit {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .Resources-Cards {
     align-items: center;
     justify-content: center;
-    margin: 10px;
-    width: 300px;
+    margin: 10px 20px;
+    width: fit-content;
     background-color: white;
     border-radius: 10px;
     display: flex;
-    gap: 60px;
+    gap: 0px;
     padding: 10px;
     letter-spacing: 2px;
-    /* box-shadow: -2px 2px 20px 1px rgba(196, 239, 255, 0.664); */
   }
 
   .Resourcesheading {
@@ -1252,14 +1250,6 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
   }
   .Events-Images {
     height: 200px;
-  }
-
-  .location {
-    margin-left: 20px;
-  }
-
-  .date {
-    margin-left: 22px;
   }
 
   .Resources-New {
@@ -1281,7 +1271,7 @@ background-image: linear-gradient(to left  , #ffed00 ,  #f49290ea);
     margin: 40px auto 40px 30px;
   }
 
-  .Assistance{
+  .Assistance {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
