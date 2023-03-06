@@ -18,7 +18,7 @@ a:hover {
   font-weight: bold;
 }
 
-.Reload{
+.Reload {
   text-align: center;
   padding: 10px;
   display: none;
@@ -111,14 +111,14 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   width: 50%;
   transform: translate(13px, -1px) rotatez(45deg);
 }
-.Searches{
+
+.Searches {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  /* display: none; */
+  display: none;
 }
-
 
 /* HERO SECTION */
 * {
@@ -127,29 +127,31 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .search-input,
-.image-input , .search-input2{
+.image-input,
+.search-input2 {
   padding: 6px;
   width: auto;
   /* border: none; */
   border-radius: 6px;
 }
 
-.search-container , .search-container2 {
+.search-container,
+.search-container2 {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: center;
-  margin: 30px 10px 0px 20px ;
+  margin: 30px 10px 0px 20px;
 }
 
-
-#search-again , #search-again2{
+#search-again,
+#search-again2 {
   display: none;
   margin: 20px auto 0px auto;
   padding: 12px;
-
 }
-.search ,  .search2 {
+.search,
+.search2 {
   margin: 0px 0px 0px 4px;
   border: none;
   background-color: rgb(2, 2, 40);
@@ -167,7 +169,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   line-height: 30px;
   margin: auto;
 }
-.caution-div{
+.caution-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,7 +177,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   text-align: center;
 }
 
-.caution{
+.caution {
   margin: 12px;
 }
 .answer {
@@ -185,11 +187,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   border-radius: 12px;
   display: none;
   text-align: center;
-}
-
-.AI-Report{
-  height: fit-content;
-  margin: 30px 0px 0px 0px ;
 }
 
 .numvisits {
@@ -670,7 +667,6 @@ text {
   letter-spacing: 2px;
 }
 
-
 .Resource-Brief {
   font-size: 12px;
 }
@@ -747,6 +743,7 @@ text {
   border-radius: 6px;
   font-size: 14px;
 }
+
 .viewall {
   border-bottom: 1px solid black;
 }
@@ -762,6 +759,54 @@ text {
   border: none;
   border-radius: 6px;
   font-size: 14px;
+}
+#AI-Report {
+  height: fit-content;
+  /* padding: 22px; */
+  margin: 30px 0px 0px 0px;
+}
+
+.Drafters {
+  display: flex;
+  padding: 30px 20px;
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+ text-align: center;
+  background-image: linear-gradient(to right, #fcf4df ,#f2c1ea, #f67b6b);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+#Aakash{
+  background-image: linear-gradient(to right,#f4b3ef ,#b2e5f8,#f2f3e2  );
+}
+
+.buyandsell {
+  color: #263238;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.Buy {
+  background-color: #ff0099;
+  color: white;
+  letter-spacing: 1.4px;
+  border-radius: 6px;
+  padding: 8px 20px;
+  border: none;
+}
+#Sell {
+  background-color: #263238;
+}
+
+.buysellbuttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.href {
+  color: white;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -842,7 +887,6 @@ text {
     margin: 20px auto 40px 10px;
   }
 
-  
   .Achievements-List {
     padding: 10px;
     gap: 30px;
@@ -854,14 +898,15 @@ text {
     justify-content: space-around;
     align-items: center;
   }
-  .Events-Images{
+  .Events-Images {
     height: 300px;
   }
-  #Fixed-Achievements-Image , #Fixed-Team-Image {
+  #Fixed-Achievements-Image,
+  #Fixed-Team-Image {
     height: 380px;
     width: 350px;
   }
-  #Fixed-Team-Image{
+  #Fixed-Team-Image {
     margin-left: -20px;
   }
   .wholeTeamdiv {
@@ -884,11 +929,11 @@ text {
     height: 320px;
   }
 
-  .footerupper{
+  .footerupper {
     display: none;
   }
 
-  .footer{
+  .footer {
     margin-top: 40px;
   }
 
@@ -906,8 +951,6 @@ text {
     border-radius: 0px;
     font-size: 18px;
   }
-
-
 }
 @media only screen and (max-width: 500px) and (min-width: 200px) {
   .Navigation {
@@ -1128,7 +1171,6 @@ text {
     font-size: 10px;
   }
 
-
   .Resources-Cards {
     align-items: center;
     justify-content: center;
@@ -1150,11 +1192,11 @@ text {
     height: 200px;
   }
 
-  .location{
+  .location {
     margin-left: 20px;
   }
 
-  .date{
+  .date {
     margin-left: 22px;
   }
 
@@ -1176,7 +1218,6 @@ text {
   #Resources-section {
     margin: 40px auto 40px 30px;
   }
-
 }
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
   .nav-item {
@@ -1219,14 +1260,15 @@ text {
     justify-content: space-around;
     align-items: center;
   }
-  .Events-Images{
+  .Events-Images {
     height: 300px;
   }
-  #Fixed-Achievements-Image , #Fixed-Team-Image {
+  #Fixed-Achievements-Image,
+  #Fixed-Team-Image {
     height: 380px;
     width: 350px;
   }
-  #Fixed-Team-Image{
+  #Fixed-Team-Image {
     margin-left: 20px;
     height: 320px;
     width: 320px;
