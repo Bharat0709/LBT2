@@ -351,8 +351,6 @@ text {
   width: 20px;
 }
 
-
-
 .CampusAmbassadors {
   display: flex;
   gap: 40px;
@@ -730,7 +728,6 @@ span:nth-of-type(1) {
   justify-content: space-between;
 }
 
-
 .Resourcesheading {
   font-size: 20px;
   font-weight: bolder;
@@ -872,6 +869,41 @@ span:nth-of-type(1) {
   width: 300px;
 }
 
+.LBTCourse {
+  display: flex;
+  padding: 20px 20px;
+  width: 500px;
+  text-align: left;
+  background-color: #263238;
+  border-radius: 20px;
+  align-items: center;
+  color: white;
+}
+
+.Courses {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  gap: 30px;
+}
+
+#Design-Course {
+  background-color: #e5ff00;
+  color: black;
+  margin-left: 30px;
+  box-shadow: 2px 2px 12px 2px rgb(49, 48, 48);
+}
+
+#Course-Para {
+  color: white;
+  margin-left: 15px;
+}
+
+.Course-Anchor {
+  color: #263238;
+}
 @media only screen and (max-width: 1000px) {
   .nav-item {
     display: none;
@@ -1017,6 +1049,9 @@ span:nth-of-type(1) {
 }
 
 @media only screen and (max-width: 500px) and (min-width: 200px) {
+  #Course-Para {
+    font-size: 14px;
+  }
   span:nth-of-type(1) {
     width: 12%;
   }
