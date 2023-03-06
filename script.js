@@ -1,6 +1,4 @@
 "use strict";
-// require("dotenv").config();
-
 const Scroll = document.querySelector("#Events-Section");
 const ScrollEvents = document.querySelector("#Events");
 const MagicSearch = document.querySelector(".MagicSearch");
@@ -16,9 +14,6 @@ const SearchAgain = document.querySelector("#search-again");
 const SearchAgain2 = document.querySelector("#search-again2");
 const APIResponse = document.querySelector("#str");
 const Renderedurl = document.querySelector(".RenderedURL");
-
-
-
 
 MagicSearch.addEventListener("click", function () {
   SearchContainerFull.style.display = "flex";
@@ -48,8 +43,8 @@ SearchAgain2.addEventListener("click", function () {
   SearchButton2.style.display = "block";
   SearchAgain2.style.display = "none";
   Renderedurl.style.display = "none";
+
   SearchInput2.style.display = "flex";
-  SearchInput2.value = " ";
 });
 
 SearchButton.addEventListener("click", function () {
@@ -59,8 +54,9 @@ SearchButton.addEventListener("click", function () {
   SearchAgain.style.display = "flex";
   Answer.style.display = "flex";
 
+
   const generateText = async (question) => {
-    // const apiKey = "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";
+    const apiKey = "";
     const url = `https://api.openai.com/v1/engines/text-davinci-003/completions`;
     const requestBody = {
       prompt: question,
@@ -105,7 +101,7 @@ SearchButton2.addEventListener("click", function () {
   const PromptGiven2 = SearchInput2.value;
   async function generateImage(prompt) {
     const API_URL = "https://api.openai.com/v1/images/generations";
-    // const API_KEY = "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";
+    const API_KEY = "";
     const response = await fetch(API_URL, {
       method: "POST",
       headers: {
@@ -131,28 +127,8 @@ SearchButton2.addEventListener("click", function () {
 
   SearchAgain2.style.display = "flex";
   SearchButton2.style.display = "none";
-  SearchInput2.style.display = "none";
-  Se;
+  SearchInput2.value = "";
 });
 
-// const EventsAPI = async (answer) => {
-//   const response = await fetch(
-//     `https://cdn.jsdelivr.net/npm/@openai/api@1.0.0/dist/openai-api.min.js`
-//   );
-//   const answer = response.data.choices[0].text;
-//   console.log(answer);
-// };
 
-// PYOBJNNIE6QUURITW3SO
-//https://private-anon-0737bf6d82-eventbriteapiv3public.apiary-mock.com/v3/venues/12345/
-//https://api.openai.com/v1/engines/text-davinci-003/completions
 
-// const EventsAPI = async (answer) => {
-//   const response2 = await fetch(
-//     `https://private-anon-0737bf6d82-eventbriteapiv3public.apiary-mock.com/v3/venues/12345/`
-//   );
-//   const json2 = await response2.json();
-//   console.log(json2);
-// };
-
-// EventsAPI();
