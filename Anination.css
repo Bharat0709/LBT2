@@ -43,3 +43,21 @@
     transform: translateY(-50px);
   }
 }
+
+@keyframes Down {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes towardsup {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+}

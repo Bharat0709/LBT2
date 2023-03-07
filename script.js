@@ -14,9 +14,30 @@ const SearchAgain = document.querySelector("#search-again");
 const SearchAgain2 = document.querySelector("#search-again2");
 const APIResponse = document.querySelector("#str");
 const Renderedurl = document.querySelector(".RenderedURL");
+const Hamburger = document.querySelector(".Hamburger");
+const SideMenu = document.querySelector("#SideMenuID");
+const sideMenuItems = document.querySelector(".SideMenuItem");
+const CheckBox = document.querySelector("#check");
+const MagicSearchNav = document.querySelector("#MagicSearchSide-Menu");
+Hamburger.addEventListener("click", function () {
+  if (CheckBox.checked) {
+    SideMenu.style.display = "flex";
+  } else {
+    SideMenu.style.display = "none";
+  }
+});
+
+sideMenuItems.addEventListener("click", function () {
+  SideMenu.style.display = "none";
+});
 
 MagicSearch.addEventListener("click", function () {
   SearchContainerFull.style.display = "flex";
+});
+
+MagicSearchNav.addEventListener("click", function () {
+  SearchContainerFull.style.display = "flex";
+  CheckBox.checked = false;
 });
 
 const RenderURl = function (data) {
@@ -53,7 +74,6 @@ SearchButton.addEventListener("click", function () {
   const PromptGiven = SearchInput.value;
   SearchAgain.style.display = "flex";
   Answer.style.display = "flex";
-
 
   const generateText = async (question) => {
     const apiKey = "";
@@ -129,6 +149,3 @@ SearchButton2.addEventListener("click", function () {
   SearchButton2.style.display = "none";
   SearchInput2.value = "";
 });
-
-
-

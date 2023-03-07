@@ -64,6 +64,39 @@ a:hover {
   border-radius: 6px;
 }
 
+.sidemenulinks {
+  animation-name: Down;
+  animation-duration: 1s;
+  flex-direction: column;
+  background-color: #263238;
+  color: white;
+  display: none;
+}
+
+.SideMenuItem {
+  color: white;
+  padding: 14px;
+  border-bottom: 1px solid white;
+  margin-left: 12px;
+}
+.arrowUP {
+  height: 30px;
+  position: absolute;
+  position: fixed;
+  top: 90vh;
+  left: 95vw;
+}
+
+.arrowUPFloating {
+  animation-name: towardsup;
+  animation-duration: 5s;
+  animation: towardsup 5s infinite;
+  height: 30px;
+  position: absolute;
+  top: 90vh;
+  left: 95vw;
+}
+
 label {
   display: flex;
   flex-direction: column;
@@ -81,7 +114,7 @@ label span {
 }
 
 span:nth-of-type(1) {
-  width: 50%;
+  width: 140%;
 }
 
 span:nth-of-type(2) {
@@ -99,6 +132,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked ~ span:nth-of-type(1) {
   transform-origin: bottom;
   transform: rotatez(45deg) translate(8px, 0px);
+  width: 50%;
 }
 
 input[type="checkbox"]:checked ~ span:nth-of-type(2) {
@@ -125,7 +159,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   padding: 0px;
   margin: 0px;
 }
-
+.CoursesHeading {
+  padding: 10px 0px 0px 0px;
+}
 .search-input,
 .image-input,
 .search-input2 {
@@ -683,7 +719,7 @@ span:nth-of-type(1) {
   justify-content: center;
   flex-wrap: wrap;
 }
-.GiveAway-Heading{
+.GiveAway-Heading {
   margin-top: 22px;
 }
 .buysellbuttons {
@@ -906,6 +942,7 @@ span:nth-of-type(1) {
 .Course-Anchor {
   color: #263238;
 }
+
 @media only screen and (max-width: 1000px) {
   .nav-item {
     display: none;
@@ -1048,8 +1085,17 @@ span:nth-of-type(1) {
     border-radius: 0px;
     font-size: 18px;
   }
-}
+  #SideMenuID {
+    display: none;
+  }
 
+  .SideMenuItem {
+    margin-left: 12px;
+  }
+  .arrowUPFloating {
+    display: none;
+  }
+}
 @media only screen and (max-width: 500px) and (min-width: 200px) {
   #Course-Para {
     font-size: 14px;
@@ -1305,7 +1351,7 @@ span:nth-of-type(1) {
   }
 
   #Resources-section {
-    margin: 40px auto 40px 30px;
+    margin: 40px auto 40px 0px;
   }
 
   .Assistance {
@@ -1313,6 +1359,19 @@ span:nth-of-type(1) {
     flex-direction: column-reverse;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  #SideMenuID {
+    display: none;
+  }
+  .arrowUP {
+    height: 30px;
+    position: absolute;
+    position: fixed;
+    top: 90vh;
+    left: 91vw;
+  }
+  .arrowUPFloating {
+    display: none;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
