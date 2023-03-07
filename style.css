@@ -679,11 +679,13 @@ span:nth-of-type(1) {
 }
 
 .LBTsupport {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.GiveAway-Heading{
+  margin-top: 22px;
+}
 .buysellbuttons {
   margin-top: 20px;
 }
