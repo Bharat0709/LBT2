@@ -519,16 +519,15 @@ span:nth-of-type(1) {
 }
 
 .Contact-us-right {
+  border-radius: 21px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   text-align: center;
   padding: 30px 50px 30px 50px;
-  border-radius: 12px;
   font-size: 22px;
-  background-color: #f6fafd;
-  border-left: 4px solid orange;
+  background-color: #c5f1fe89;
 }
 
 .suggestion {
@@ -554,9 +553,10 @@ span:nth-of-type(1) {
 }
 
 .join-community {
-  background-color: #e5ff00;
+  background-color: #ff0099;
   padding: 6px 12px 6px 12px;
   border-radius: 6px;
+  color: white;
   font-size: 18px;
 }
 
