@@ -1329,6 +1329,10 @@ span{
   }
 }
 @media only screen and (max-width: 500px) and (min-width: 200px) {
+  
+  .Temp {
+    width: 300px;
+  }
   #Course-Para {
     font-size: 14px;
   }
@@ -1342,7 +1346,7 @@ span{
 
   .Animated-logo {
     margin-right: 100px;
-    height: 4vh;
+    height: 5vh;
   }
   .Students {
     height: 30vh;
