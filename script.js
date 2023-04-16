@@ -1,7 +1,7 @@
 "use strict";
 const Scroll = document.querySelector("#Events-Section");
 const ScrollEvents = document.querySelector("#Events");
-const MagicSearch = document.querySelector(".MagicSearch");
+// const MagicSearch = document.querySelector(".MagicSearch");
 const Answer = document.querySelector(".answer");
 const Reload = document.querySelector(".Reload");
 const SearchContainer = document.querySelector(".search-container2");
@@ -18,7 +18,8 @@ const Hamburger = document.querySelector(".Hamburger");
 const SideMenu = document.querySelector("#SideMenuID");
 const sideMenuItems = document.querySelector(".SideMenuItem");
 const CheckBox = document.querySelector("#check");
-const MagicSearchNav = document.querySelector("#MagicSearchSide-Menu");
+// const MagicSearchNav = document.querySelector("#MagicSearchSide-Menu");
+
 Hamburger.addEventListener("click", function () {
   if (CheckBox.checked) {
     SideMenu.style.display = "flex";
@@ -27,18 +28,14 @@ Hamburger.addEventListener("click", function () {
   }
 });
 
-sideMenuItems.addEventListener("click", function () {
-  SideMenu.style.display = "none";
-});
+// MagicSearch.addEventListener("click", function () {
+//   SearchContainerFull.style.display = "flex";
+// });
 
-MagicSearch.addEventListener("click", function () {
-  SearchContainerFull.style.display = "flex";
-});
-
-MagicSearchNav.addEventListener("click", function () {
-  SearchContainerFull.style.display = "flex";
-  CheckBox.checked = false;
-});
+// MagicSearchNav.addEventListener("click", function () {
+//   SearchContainerFull.style.display = "flex";
+//   CheckBox.checked = false;
+// });
 
 const RenderURl = function (data) {
   const html = `
@@ -47,10 +44,6 @@ const RenderURl = function (data) {
   SearchContainer.insertAdjacentHTML("afterbegin", html);
   console.log(data.data[0].url);
 };
-
-ScrollEvents.addEventListener("click", function () {
-  Scroll.scrollIntoView({ behavior: "smooth" });
-});
 
 SearchAgain.addEventListener("click", function () {
   SearchButton.style.display = "block";
@@ -148,4 +141,17 @@ SearchButton2.addEventListener("click", function () {
   SearchAgain2.style.display = "flex";
   SearchButton2.style.display = "none";
   SearchInput2.value = "";
+});
+
+const navLinks = document.querySelectorAll(".nav-item");
+console.log(navLinks);
+const scrollMargin = -30;
+const scrollPosition =
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    const section = document.querySelector(link.getAttribute("href"));
+    section.getBoundingClientRect().top + window.pageYOffset + scrollMargin;
+    console.log(section);
+    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+  });
 });

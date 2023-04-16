@@ -10,8 +10,12 @@ body {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   color: black;
+}
+button{
+  cursor: pointer;
 }
 
 a:hover {
@@ -29,13 +33,13 @@ a:hover {
 .Navigation {
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .Animated-logo {
-  height: 8vh;
+  height: 7vh;
   animation-name: example;
   animation-duration: 5s;
   margin-right: 180px;
@@ -238,8 +242,19 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 
 .Tagline {
   letter-spacing: 1px;
-  line-height: 60px;
+  line-height: 55px;
   font-size: 34px;
+}#event-contact-apply{
+  background-color:#ff0099 ;
+}
+
+#Ambassador-Image{
+  height: 120px;
+}
+
+.Ambassador-buttons , .Survey-links{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .Below_tagline {
@@ -417,7 +432,7 @@ span:nth-of-type(1) {
 #SyllabusXVisit {
   background-color: #e5ff00;
   color: black;
-  box-shadow: 2px 2px 12px 2px black;
+  box-shadow: 2px 2px 12px 2px rgb(53, 53, 53);
 }
 .UnderEvent {
   display: flex;
@@ -518,6 +533,10 @@ span:nth-of-type(1) {
   gap: 30px;
 }
 
+/* #Survey{
+  height: 200px;
+} */
+
 .Contact-us-right {
   border-radius: 21px;
   display: flex;
@@ -553,7 +572,7 @@ span:nth-of-type(1) {
 }
 
 .join-community {
-  background-color: #ff0099;
+  background-color: #263238;
   padding: 6px 12px 6px 12px;
   border-radius: 6px;
   color: white;
@@ -642,9 +661,8 @@ span:nth-of-type(1) {
 .totop {
   padding: 6px 12px;
   text-align: center;
-  color: white;
   border-radius: 6px;
-  background-color: #263238;
+  background-image: linear-gradient(to right , rgba(255, 0, 174, 0.269) ,rgba(222, 212, 212, 0.421),  rgba(0, 255, 255, 0.562));
 }
 
 .Arrow-Icon {
@@ -689,11 +707,24 @@ span:nth-of-type(1) {
   height: 40px;
 }
 .PG-Image {
+  /* margin-top: 20px; */
   height: 100px;
 }
 
+.FeatureImage {
+  margin-top: 20px;
+}
+.Image {
+  margin-bottom: 20px;
+}
+
+.Tech {
+  height: 120px;
+  margin-bottom: 0px;
+}
+
 #Payingguest {
-  background-image: linear-gradient(to left, #ffed00, #f49290ea);
+  background-image: linear-gradient(to left, #ffed00, #f4929078);
 }
 
 .Resources-Cards {
@@ -713,9 +744,81 @@ span:nth-of-type(1) {
   justify-content: center;
   flex-wrap: wrap;
 }
+.ResourcesStat , .EventHeading {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+#Contest-Section{
+padding: 0px;
+}
+.Contest-tag{
+  font-size: 12px;
+  color:black;
+}
+.Contest-register{
+  background-color: #ffffff;
+}
+
+
+.ContestTail{
+  padding: 12px;
+}
+
+#Register-To{
+  background-color: #ff0099;
+  border-radius: 200px;
+  /* color: black; */
+}
+
+.ContestTail-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 16px ;
+  gap: 20px;
+  border-radius: 12px;
+  background-color: #b2e5f8a1;
+}
+
+.candidates{
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+.ContestHead{
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.ContestStat{
+  background-color: #b2e5f8;
+}
+.sponsor-logo{
+  height: 120px;
+}
+
+.sponsor-logo-2{
+  height: 80px;
+}
+
+.Logo-div{
+  display: flex;
+  gap: 30px;
+  padding: 30px 20px 20px 0px ;
+}
+
+.paisa{
+  font-size: 18px;
+  font-weight: bold;
+}
 .LBTsupport {
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -725,17 +828,20 @@ span:nth-of-type(1) {
 .buysellbuttons {
   margin-top: 20px;
 }
+.sponsor-logo{
+  height: 50px;
+}
 
 #LaptopsAssistance {
   background-image: linear-gradient(to left, #f4afe9, #d7ebeb);
 }
 #Buylaptops {
   background-color: #263238;
-  margin: 12px;
+  margin-top: 20px;
 }
 
 #BuyPG {
-  margin: 10px;
+  margin-top: 20px;
   background-color: #263238;
 }
 .Resource-Brief {
@@ -756,7 +862,7 @@ span:nth-of-type(1) {
 .ResourcesStat {
   display: flex;
   gap: 20px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .Members {
@@ -774,7 +880,7 @@ span:nth-of-type(1) {
 .Resource-Link {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding: 10px;
 }
 
@@ -782,6 +888,19 @@ span:nth-of-type(1) {
   padding: 8px 12px;
   width: fit-content;
   border: none;
+  margin: 12px 12px 0px 0px ;
+  letter-spacing: 0.4px;
+  background-color: #263238;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.ResourcesVisit-2 {
+  padding: 8px 12px;
+  width: fit-content;
+  border: none;
+  /* margin: 12px 12px 0px 0px ; */
   letter-spacing: 0.4px;
   background-color: #263238;
   color: white;
@@ -803,7 +922,9 @@ span:nth-of-type(1) {
 .Resources-Cards:hover {
   box-shadow: -2px 2px 10px 0px rgba(137, 224, 255, 0.664);
 }
-
+.Event-Card:hover{
+  box-shadow: none;
+}
 .Promote {
   padding: 8px 12px;
   width: fit-content;
@@ -839,35 +960,56 @@ span:nth-of-type(1) {
 
 .Drafters {
   display: flex;
-  padding: 30px 20px;
-  margin: 20px;
+  padding: 20px 10px;
+  margin: 15px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to left, #f2c1ea, #e4e95d);
+  background-image: linear-gradient(to left, #f2c1ea, #e4e95d5e);
   border-radius: 20px;
 }
+
+#Technology {
+  background-image: linear-gradient(to left, #00ff87, #60efff63);
+}
 #Aakash {
-  background-image: linear-gradient(to left, #b3f4e6, #b2e5f8, #f2f3e2);
+  background-image: linear-gradient(to left, #b3f4e6, #b2e5f8, #f2f3e29f);
 }
 
 #GithubTemplate {
-  background-image: linear-gradient(to right, #f3f98a, #95ecb0);
+  background-image: linear-gradient(to right, #f3f98a, #95ecb096);
 }
 
 #Resumetemplate {
-  background-image: linear-gradient(to right, #e763f9a2, #f2c2ee);
+  background-image: linear-gradient(to right, #e763f94e, #f2c2ee);
 }
 
 #PortfolioTemplate {
-  background-image: linear-gradient(to right, #f0cdcd, #71c3f7);
+  background-image: linear-gradient(to right, #f0cdcd, #71c4f78f);
 }
+
+#Event-Management {
+  background-image: linear-gradient(to right, #95ecb096, #b2e5f8, #95ecb096);
+}
+#event-contact{
+  background-color: #263238;
+}
+
+#SurveySection{
+  background-image: linear-gradient(to right, #fffbaf, #ac2aed2d);
+}
+
+#AmbassadorSection {
+  background-image: linear-gradient(to left, #b3f4e6, #b2e5f8, #f2f3e29f);
+}
+
+
 
 .buyandsell {
   color: #263238;
   font-weight: bold;
-  font-size: 18px;
-  padding: 12px;
+  font-size: 15px;
+  padding: 6px;
 }
 
 .Buy {
@@ -875,8 +1017,9 @@ span:nth-of-type(1) {
   color: white;
   letter-spacing: 1.4px;
   border-radius: 6px;
-  padding: 8px 20px;
+  padding: 8px 10px;
   border: none;
+  font-size: 12px;
 }
 #Sell {
   background-color: #263238;
@@ -896,6 +1039,10 @@ span:nth-of-type(1) {
   flex-wrap: wrap;
 }
 
+/* .Books-image{
+  margin-bottom: 20px;
+} */
+
 #BuyGithub,
 #BuyPortfolio,
 #BuyResume {
@@ -904,7 +1051,7 @@ span:nth-of-type(1) {
 }
 
 .Temp {
-  width: 300px;
+  width: 250px;
 }
 
 .LBTCourse {
@@ -930,7 +1077,7 @@ span:nth-of-type(1) {
 #Design-Course {
   background-color: #e5ff00;
   color: black;
-  margin-left: 30px;
+  margin-left: 20px;
   box-shadow: 2px 2px 12px 2px rgb(49, 48, 48);
 }
 
@@ -941,6 +1088,91 @@ span:nth-of-type(1) {
 
 .Course-Anchor {
   color: #263238;
+}
+
+
+.customers {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 66px;
+}
+.cust {
+  margin-top: 0px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.together{
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.cutomts {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  padding: 60px 0px 60px 100px;
+  background-color: #f0fefa;
+}
+
+#pareshan {
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.customers-review {
+  line-height: 32px;
+}
+span{
+  color: #060e98;
+}
+.uiux {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.UI {
+  background-color: white;
+  padding: 24px 20px;
+  box-shadow: 9px 2px 12px 5px rgb(246, 239, 239);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  align-items: flex-start;
+  height: fit-content;
+}
+
+.discription {
+  opacity: 0.6;
+  line-height: 24px;
+}
+
+.icon {
+  height: 40px;
+}
+
+.uidiv {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.logo {
+  padding: 100px 0px 100px 0px;
+}
+
+.contactwithme {
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #263238;
+  border: none;
+  border-radius: 200px;
+  color: white;
+  margin-top: 20px;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1032,7 +1264,7 @@ span:nth-of-type(1) {
     justify-content: space-around;
     align-items: center;
   }
-  .Events-Images {
+  .Events-IImages {
     height: 300px;
   }
   #Fixed-Achievements-Image,
@@ -1060,7 +1292,7 @@ span:nth-of-type(1) {
   }
 
   #Contact-Us-On {
-    height: 320px;
+    height: 270px;
   }
 
   .footerupper {
@@ -1104,13 +1336,13 @@ span:nth-of-type(1) {
     width: 12%;
   }
   .Navigation {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px;
   }
 
   .Animated-logo {
     margin-right: 100px;
-    height: 6vh;
+    height: 4vh;
   }
   .Students {
     height: 30vh;
