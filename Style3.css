@@ -91,3 +91,10 @@ body {
 #paid{
   background-image: linear-gradient(to left, rgb(255, 224, 123), rgb(225, 247, 83));
 }
+
+.Animated-logo3 {
+  height: 5vh;
+  animation-name: example;
+  animation-duration: 5s;
+  margin-right: 180px;
+}

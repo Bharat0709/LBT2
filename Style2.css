@@ -60,6 +60,8 @@ body {
 
 .Visit_Views {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .Views {
@@ -162,4 +164,18 @@ select {
 
 .filter {
   text-align: center;
+}
+.Animated-logo{
+  height:6vh;
+}
+
+#Coming-soon{
+  font-size: 10px;
+}
+
+.Animated-logo2 {
+  height: 5vh;
+  animation-name: example;
+  animation-duration: 5s;
+  margin-right: 180px;
 }
