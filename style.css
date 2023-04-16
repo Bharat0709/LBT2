@@ -656,7 +656,7 @@ span:nth-of-type(1) {
 
 .Footer-Logo {
   padding: 50px;
-  height: 70px;
+  height: 6vh;
   width: fit-content;
 }
 
@@ -1315,10 +1315,9 @@ span {
   #Contact-Us-On {
     height: 270px;
   }
-
-  .footerupper {
-    display: none;
-  }
+#Contactus-Social-Link{
+  display: none;
+}
 
   .footer {
     margin-top: 40px;
@@ -1553,7 +1552,7 @@ span {
     gap: 50px;
   }
   .Footer-Logo {
-    height: 40px;
+    height: 5vh;
     padding: 30px 0px 20px 0px;
   }
 
